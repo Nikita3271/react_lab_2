@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+  font-family: monospace, serif;
+  letter-spacing: 0.05em;
+  transition: all 0.3s;
+}
+
+body {
+  background-color: #111;
+}
+
+h2 {
+  color: #555;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form_login {
+  display: flex;
+  flex-direction: column;
+  align-items : center;
+  min-width: 400px;
+  padding: 16px;
+  border: 1px solid #555;
+}
+
+.form_login:hover h2 {
+  color: #2dc72d;
+}
+
+.form_login:hover {
+  border: 1px solid #2dc72d;
+}
+
+.input_login {
+  width: calc(100% - 32px);
+  outline: none;
+  margin: 8px;
+  transition: all 0.3s;
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  background: transparent;
+  color: #555;
+  font-family: monospace, serif;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  border-top: 1.5px solid #111;
+  border-bottom: 1.5px solid #111;
+}
+
+.form_login:hover .input_login {
+  color: #2dc72d;
+}
+
+.input_login:focus {
+  border: 1.5px solid #555;
+}
+
+.form_login:hover .input_login:focus {
+  border: 1.5px solid #2dc72d;
+}
+
+.button_login {
+  width: calc(100% - 10px);
+  outline: none;
+  padding: 15px 10px;
+  margin: 8px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+  background-color: #111;
+  border: 1.5px solid #555;
+  color: #555;
+  font-size: 18px;
+}
+
+.form_login:hover .button_login {
+  border: 1.5px solid #2dc72d;
+  color: #2dc72d;
+}
+
+.button_login:active {
+  border: 1.5px solid rgb(17, 101, 9);
+  color: rgb(17, 101, 9);
+}
+
+.button_login:disabled {
+  border: 1.5px solid #555;
+  color: #555;
+}
+
+.form_login:hover .button_login:disabled {
+  border: 1.5px solid rgb(17, 101, 9);
+  color: rgb(17, 101, 9);
+}
+
+.text_link {
+  color: #555;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.form_login:hover .text_link {
+  color: #2dc72d;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  align-items : center;
+  min-width: 200px;
+  padding: 16px;
+  border: 1px solid #555;
+  color: #2dc72d;
+}
+
+.user_info:hover {
+  border: 1px solid #2dc72d;
+}
+
+.user_info:hover .button_login {
+  border: 1.5px solid #2dc72d;
+  color: #2dc72d;
+}
+
+.user_info:hover .button_login:disabled {
+  border: 1.5px solid rgb(17, 101, 9);
+  color: rgb(17, 101, 9);
+}
+
+.user_text {
+  font-size: 19px;
+  margin: 4px 2px;
+  color: #555;
+}
+
+.user_info:hover .user_text {
+  color: #2dc72d;
+}
